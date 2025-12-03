@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark Theme Admission Form</title>
+
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #0d0d0d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .form-container {
+        background: rgba(20, 20, 20, 0.85);
+        padding: 35px;
+        width: 380px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 255, 200, 0.2);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(0, 255, 200, 0.3);
+        transition: 0.3s;
+    }
+
+    .form-container:hover {
+        box-shadow: 0 0 40px rgba(0, 255, 200, 0.5);
+        transform: scale(1.02);
+    }
+
+    h2 {
+        text-align: center;
+        color: #00ffd5;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+    }
+
+    label {
+        color: #bbb;
+        font-size: 14px;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 18px;
+        border: none;
+        border-radius: 5px;
+        background: #1b1b1b;
+        color: #eee;
+        font-size: 14px;
+        outline: none;
+        transition: 0.3s;
+        border-bottom: 2px solid transparent;
+    }
+
+    input:hover, select:hover, textarea:hover {
+        background: #222;
+        border-bottom: 2px solid #00ffd5;
+    }
+
+    input:focus, select:focus, textarea:focus {
+        background: #000;
+        box-shadow: 0 0 10px #00ffd5;
+        border-bottom: 2px solid #00ffd5;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        background: linear-gradient(135deg, #00ffd5, #00a8ff);
+        color: #000;
+        cursor: pointer;
+        transition: 0.4s;
+        font-weight: bold;
+    }
+
+    button:hover {
+        box-shadow: 0 0 15px #00ffd5;
+        transform: translateY(-3px);
+    }
+</style>
+
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Admission Form</h2>
+    
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number" required>
+
+        <label>Date of Birth</label>
+        <input type="date" required>
+
+        <label>Course Selection</label>
+        <select required>
+            <option value="">Select Course</option>
+            <option>BCA</option>
+            <option>BBA</option>
+            <option>B.Tech</option>
+            <option>MBA</option>
+            <option>MCA</option>
+        </select>
+
+        <label>Address</label>
+        <textarea placeholder="Enter your address"></textarea>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+</body>
+</html>
